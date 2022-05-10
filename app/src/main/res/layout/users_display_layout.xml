@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rec">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/users_layout"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/users_profile_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textAlignment="textStart"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:id="@+id/user_online_status"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/online"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Status"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                android:layout_marginLeft="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/request_accept_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20sp"
+                    android:text="Accept"
+                    android:textSize="16dp"
+                    android:textAllCaps="false"
+                    android:background="@android:color/holo_green_light"
+                    android:textColor="@android:color/background_light"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/request_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20sp"
+                    android:text="Cancel"
+                    android:textSize="16dp"
+                    android:textAllCaps="false"
+                    android:background="@android:color/holo_red_dark"
+                    android:textColor="@android:color/background_light"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
